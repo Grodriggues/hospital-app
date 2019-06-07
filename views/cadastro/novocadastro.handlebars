@@ -1,0 +1,28 @@
+<div class="container content-section">
+    
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+            <div id="contactform">
+                <h1>Novo Cadastro:</h1>
+                <!-- Replace the e-mail address -->
+                <form action="/cadastros" method="POST">
+                    <input type="text" name="nome" placeholder="Seu Nome" required>
+					<input type="text" name="email" placeholder="Seu E-mail" required>
+					<input type="text" name="cpf" placeholder="Seu cpf" required>
+                    <input type="text" name="rg" placeholder="Seu rg" required>
+                    <input type="text" name="cidade" placeholder="Sua Cidade" required>
+                    <input type="text" name="estado" placeholder="Seu estado" required>
+                    <input type="text" name="nascimento" placeholder="nascimento" required>
+                   
+                    <!-- Replace Aries with the name of your website -->
+                    <input type="hidden" name="_subject" value="New message via Aries!" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <!-- Replace http://www.themepush.com/freethemes/aries/ with your website url -->
+                    <input type="hidden" name="_next" value="http://www.themepush.com/freethemes/aries/thankyou.html" />
+                    <input class="btn" type="submit" value="Cadastrar">
+                   
+                </form>
+            </div>
+		</div>
+	</div>
+</div>

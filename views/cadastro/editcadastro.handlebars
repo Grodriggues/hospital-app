@@ -1,0 +1,30 @@
+<div class="container content-section">
+    
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+            <div id="contactform">
+                <h1>Editar Cadastro:</h1>
+                <!-- Replace the e-mail address -->
+                <form action="/editarcadastro" method="POST">
+                    <input type="hidden" name="id" value="{{dados._id}}">
+                    <input type="text" name="nome" value="{{dados.nome}}" required>
+					<input type="text" name="email" value="{{dados.email}}" required>
+					<input type="text" name="cpf" value="{{dados.cpf}}"required>
+                    <input type="text" name="rg" value="{{dados.rg}}"required>
+                    <input type="text" name="cidade" value="{{dados.cidade}}" required>
+                    <input type="text" name="estado" value="{{dados.estado}}" required>
+                    <input type="text" name="nascimento" value="{{dados.nascimento}}" required>
+                   
+                    <!-- Replace Aries with the name of your website -->
+                    <input type="hidden" name="_subject" value="New message via Aries!" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <!-- Replace http://www.themepush.com/freethemes/aries/ with your website url -->
+                    <input type="hidden" name="_next" value="http://www.themepush.com/freethemes/aries/thankyou.html" />
+                    <input class="btn" type="submit" value="Editar Cadastro">
+                   <a href="/tabela"> <input class="btn" value="Cancelar"></a>
+                   
+                </form>
+            </div>
+		</div>
+	</div>
+</div>
